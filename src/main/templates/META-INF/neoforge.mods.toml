@@ -97,6 +97,12 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.${mod_id}]]
+    modId="owo"
+    mandatory=true
+    versionRange="*"
+    ordering="NONE"
+    side="CLIENT"
 
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
