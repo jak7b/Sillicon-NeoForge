@@ -1,6 +1,6 @@
 package net.kuko.silicon;
 
-import com.mojang.blaze3d.DontObfuscate;
+import net.kuko.silicon.item.ModItem;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -23,13 +23,14 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(SiliconMod.MOD_ID)
 public class SiliconMod {
     public static final String MOD_ID = "silicon";
-    @SuppressWarnings("unused")
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
 
 
     public SiliconMod(IEventBus modEventBus, @SuppressWarnings("unused") ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+
+        ModItem.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
