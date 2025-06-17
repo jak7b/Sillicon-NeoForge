@@ -1,10 +1,10 @@
 package net.kuko.silicon;
 
+import com.mojang.blaze3d.DontObfuscate;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.world.item.CreativeModeTabs;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -23,9 +23,12 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(SiliconMod.MOD_ID)
 public class SiliconMod {
     public static final String MOD_ID = "silicon";
+    @SuppressWarnings("unused")
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public SiliconMod(IEventBus modEventBus, ModContainer modContainer) {
+
+
+    public SiliconMod(IEventBus modEventBus, @SuppressWarnings("unused") ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
@@ -33,15 +36,13 @@ public class SiliconMod {
         modEventBus.addListener(this::addCreative);
     }
 
+
     private void commonSetup(FMLCommonSetupEvent event) {
 
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
