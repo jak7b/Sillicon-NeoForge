@@ -1,6 +1,7 @@
 package net.kuko.silicon;
 
-import net.kuko.silicon.item.ModItem;
+import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
+import net.kuko.silicon.item.ItemInit;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -30,9 +31,8 @@ public class SiliconMod {
     public SiliconMod(IEventBus modEventBus, @SuppressWarnings("unused") ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
+        FieldRegistrationHandler.register(ItemInit.class, MOD_ID, false);
 
-
-        ModItem.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

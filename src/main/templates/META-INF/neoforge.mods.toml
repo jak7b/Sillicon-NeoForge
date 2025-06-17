@@ -89,13 +89,13 @@ description='''${mod_description}'''
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
-
-[[dependencies.${mod_id}]]
-    modId="connector"
-    mandatory=true
-    versionRange="*"
-    ordering="NONE"
-    side="BOTH"
+#
+#[[dependencies.${mod_id}]]
+#    modId="connector"
+#    mandatory=true
+#    versionRange="*"
+#    ordering="NONE"
+#    side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="owo"
