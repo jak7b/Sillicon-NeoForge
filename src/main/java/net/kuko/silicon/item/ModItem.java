@@ -9,9 +9,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItem {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SiliconMod.MOD_ID);
 
-    // 1. Add actual item registrations here
     public static final DeferredItem<Item> SILICON = ITEMS.register("silicon",
             () -> new Item(new Item.Properties()));
+
 
 
 
