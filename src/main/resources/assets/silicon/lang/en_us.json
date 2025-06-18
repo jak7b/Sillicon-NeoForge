@@ -23,5 +23,8 @@
   "block.silicon.bismuth_ore":[
     { "translate": "item.silicon.bismuth" },
     " Ore"
-  ]
+  ],
+  "creativetab.silicon.bismuth_item_tab": "Items Bismuth",
+  "creativetab.silicon.bismuth_block_tab": "Blocks Bismuth"
+
 }

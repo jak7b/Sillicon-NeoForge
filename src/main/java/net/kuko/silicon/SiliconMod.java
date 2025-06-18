@@ -3,6 +3,7 @@ package net.kuko.silicon;
 
 import com.mojang.logging.LogUtils;
 import net.kuko.silicon.init.BlockInit;
+import net.kuko.silicon.init.CreativeModTabsInit;
 import net.kuko.silicon.init.ItemInit;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,8 +33,12 @@ public class SiliconMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        CreativeModTabsInit.register(modEventBus);
+
         ItemInit.register(modEventBus);
         BlockInit.register(modEventBus);
+
+
 
         NeoForge.EVENT_BUS.register(this);
 
