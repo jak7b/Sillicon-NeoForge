@@ -44,10 +44,8 @@ public class SiliconMod {
 
     }
 
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-       // event.accept(ItemInit.BISMUTH);
 
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemInit.BISMUTH);
             event.accept(ItemInit.RAW_BISMUTH);

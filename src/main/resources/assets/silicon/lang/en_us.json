@@ -1,5 +1,16 @@
 {
   "item.silicon.bismuth": [
-    "Bismuth"
+    {"text":"B","color":"#EF9F65","bold":true},
+    {"text":"i","color":"#F7BA4D","bold":true},
+    {"text":"s","color":"#FED435","bold":true},
+    {"text":"m","color":"#C1CB52","bold":true},
+    {"text":"u","color":"#84C36F","bold":true},
+    {"text":"t","color":"#46BA8C","bold":true},
+    {"text":"h","color":"#09B1A9","bold":true}
+  ],
+
+  "item.silicon.raw_bismuth": [
+    {"text": "Raw "},
+    { "translate": "item.silicon.bismuth" }
   ]
 }

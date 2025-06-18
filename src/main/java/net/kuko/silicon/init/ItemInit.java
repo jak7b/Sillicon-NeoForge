@@ -13,13 +13,13 @@ import java.util.function.Supplier;
 public class ItemInit {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SiliconMod.MOD_ID);
 
-
-
     public static final DeferredItem<Item> BISMUTH = ITEMS.register("bismuth",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
             () -> new Item(new Item.Properties()));
+
+
     // registered as mod_id:bismuth
 
     public static void register(IEventBus bus) {
