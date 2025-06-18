@@ -1,16 +1,27 @@
 {
   "item.silicon.bismuth": [
-    {"text":"B","color":"#EF9F65","bold":true},
-    {"text":"i","color":"#F7BA4D","bold":true},
-    {"text":"s","color":"#FED435","bold":true},
-    {"text":"m","color":"#C1CB52","bold":true},
-    {"text":"u","color":"#84C36F","bold":true},
-    {"text":"t","color":"#46BA8C","bold":true},
-    {"text":"h","color":"#09B1A9","bold":true}
+    {"text":"","extra":[{"text":"B","color":"#FED435","bold":true},
+      {"text":"i","color":"#FED435","bold":true},
+      {"text":"s","color":"#FED435","bold":true},
+      {"text":"m","color":"#FED435","bold":true},
+      {"text":"u","color":"#ACC85C","bold":true},
+      {"text":"t","color":"#5BBD82","bold":true},
+      {"text":"h","color":"#09B1A9","bold":true}]}
   ],
 
   "item.silicon.raw_bismuth": [
-    {"text": "Raw "},
+    "Raw ",
     { "translate": "item.silicon.bismuth" }
+  ],
+
+
+  "block.silicon.bismuth_block":[
+    "Block of ",
+    { "translate": "item.silicon.bismuth" }
+  ],
+
+  "block.silicon.bismuth_ore":[
+    { "translate": "item.silicon.bismuth" },
+    " Ore"
   ]
 }

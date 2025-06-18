@@ -20,7 +20,8 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
 
 
-    // registered as mod_id:bismuth
+
+
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

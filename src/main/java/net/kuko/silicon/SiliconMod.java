@@ -2,6 +2,7 @@ package net.kuko.silicon;
 
 
 import com.mojang.logging.LogUtils;
+import net.kuko.silicon.init.BlockInit;
 import net.kuko.silicon.init.ItemInit;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class SiliconMod {
         modEventBus.addListener(this::commonSetup);
 
         ItemInit.register(modEventBus);
+        BlockInit.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -50,6 +52,17 @@ public class SiliconMod {
             event.accept(ItemInit.BISMUTH);
             event.accept(ItemInit.RAW_BISMUTH);
         }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(BlockInit.BISMUTH_BLOCK);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(BlockInit.BISMUTH_ORE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+
+        }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
