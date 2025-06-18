@@ -1,12 +1,10 @@
 package net.kuko.silicon;
 
-import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
-import net.kuko.silicon.item.ItemInit;
-import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-
-
+import net.kuko.silicon.init.ItemInit;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -18,6 +16,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import org.slf4j.Logger;
 
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -29,15 +28,16 @@ public class SiliconMod {
 
 
     public SiliconMod(IEventBus modEventBus, @SuppressWarnings("unused") ModContainer modContainer) {
+        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        FieldRegistrationHandler.register(ItemInit.class, MOD_ID, false);
-
+        ItemInit.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
     }
+
 
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -46,6 +46,12 @@ public class SiliconMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+       // event.accept(ItemInit.BISMUTH);
+
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ItemInit.BISMUTH);
+            event.accept(ItemInit.RAW_BISMUTH);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -61,8 +67,6 @@ public class SiliconMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
-
         }
     }
 }

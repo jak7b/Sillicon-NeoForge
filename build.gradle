@@ -20,9 +20,9 @@ group = mod_group_id
 repositories {
     mavenLocal()
     maven { url 'https://maven.wispforest.io/releases/' }
+   maven { url "https://maven.su5ed.dev/releases" }
+    maven { url "https://maven.shedaniel.me/" }
 
-
-    maven { url "https://maven.su5ed.dev/releases" }
 
 }
 
@@ -139,10 +139,11 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+//
+//    implementation "io.wispforest:owo-lib-neoforge:${project.owo_version}"
+//    accessTransformers "io.wispforest:owo-lib-neoforge:${project.owo_version}"
+//    interfaceInjectionData "io.wispforest:owo-lib-neoforge:${project.owo_version}"
 
-    implementation "io.wispforest:owo-lib-neoforge:${project.owo_version}"
-    accessTransformers "io.wispforest:owo-lib-neoforge:${project.owo_version}"
-    interfaceInjectionData "io.wispforest:owo-lib-neoforge:${project.owo_version}"
 
 
 }

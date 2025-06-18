@@ -1,5 +1,5 @@
 {
-  "itemGroup.silicon": "Example Mod Tab",
-  "block.silicon.example_block": "Example Block",
-  "item.silicon.example_item": "Example Item"
+  "item.silicon.bismuth": [
+    "Bismuth"
+  ]
 }

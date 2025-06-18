@@ -89,20 +89,15 @@ description='''${mod_description}'''
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
+#
 #
 #[[dependencies.${mod_id}]]
-#    modId="connector"
+#    modId="owo"
 #    mandatory=true
 #    versionRange="*"
 #    ordering="NONE"
-#    side="BOTH"
-
-[[dependencies.${mod_id}]]
-    modId="owo"
-    mandatory=true
-    versionRange="*"
-    ordering="NONE"
-    side="CLIENT"
+#    side="CLIENT"
 
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
