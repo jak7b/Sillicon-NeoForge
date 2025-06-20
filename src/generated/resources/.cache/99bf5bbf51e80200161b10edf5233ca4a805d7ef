@@ -1,3 +1,4 @@
-// 1.21.1	2025-06-20T05:29:43.7870309	Tags for minecraft:block mod id silicon
+// 1.21.1	2025-06-20T05:47:23.2344667	Tags for minecraft:block mod id silicon
 38b50d6a41c74104648f8d1ea1f7737d769b5048 data/minecraft/tags/block/mineable/pickaxe.json
-de01b2b113b5271bfeb1fb694b0f97d28c8e38b9 data/minecraft/tags/block/needs_iron_tool.json
+e724e277c81370c6d6d929fcb27530e96cfa25cd data/minecraft/tags/block/needs_diamond_tool.json
+73626bd5864d7a480df434b6f9995ed7bdd6721a data/minecraft/tags/block/needs_iron_tool.json
