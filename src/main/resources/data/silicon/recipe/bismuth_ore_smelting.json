@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 60,
+  "experience": 0.9,
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "silicon:bismuth_ore"
+  },
+  "result": {
+    "id": "silicon:bismuth"
+  }
+}

@@ -46,6 +46,7 @@ public class CreativeModTabsInit {
                     .displayItems((parameters, output) ->{
                         output.accept(BlockInit.BISMUTH_BLOCK.get());
                         output.accept(BlockInit.BISMUTH_ORE.get());
+                        output.accept(BlockInit.DEEPSLATE_BISMUTH_ORE.get());
                     })
                     .build()
     );

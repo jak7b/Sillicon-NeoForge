@@ -5,7 +5,6 @@ import com.mojang.logging.LogUtils;
 import net.kuko.silicon.init.BlockInit;
 import net.kuko.silicon.init.CreativeModTabsInit;
 import net.kuko.silicon.init.ItemInit;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -28,10 +27,13 @@ public class SiliconMod {
     public static final Logger LOGGER = LogUtils.getLogger();
 
 
-
     public SiliconMod(IEventBus modEventBus, @SuppressWarnings("unused") ModContainer modContainer) {
         // Register the commonSetup method for modloading
+
+
         modEventBus.addListener(this::commonSetup);
+
+
 
         CreativeModTabsInit.register(modEventBus);
 
@@ -44,6 +46,7 @@ public class SiliconMod {
 
         modEventBus.addListener(this::addCreative);
     }
+
 
 
 
@@ -83,6 +86,7 @@ public class SiliconMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
         }
     }
 }

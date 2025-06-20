@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 0.9,
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "silicon:raw_bismuth"
+  },
+  "result": {
+    "id": "silicon:bismuth"
+  }
+}

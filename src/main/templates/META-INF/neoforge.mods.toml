@@ -91,13 +91,13 @@ description='''${mod_description}'''
     side="BOTH"
 
 #
-#
+##
 #[[dependencies.${mod_id}]]
-#    modId="owo"
-#    mandatory=true
+#    modId="cloth_config"
+#    type="optional"
 #    versionRange="*"
 #    ordering="NONE"
-#    side="CLIENT"
+#    side="BOTH"
 
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares

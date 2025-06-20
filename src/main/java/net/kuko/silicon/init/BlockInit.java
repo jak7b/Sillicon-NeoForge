@@ -11,6 +11,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.List;
+import java.util.Map;
 import java.util.function.Supplier;
 
 public class BlockInit {
@@ -25,15 +27,19 @@ public class BlockInit {
             ));
 
 
-
-
     public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock("bismuth_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.AMETHYST)
+                    .sound(SoundType.STONE)
                     .strength(3.5f)
                     .requiresCorrectToolForDrops()
             ));
 
+    public static final DeferredBlock<Block> DEEPSLATE_BISMUTH_ORE = registerBlock("bismuth_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.DEEPSLATE)
+                    .strength(3.9f)
+                    .requiresCorrectToolForDrops()
+            ));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
