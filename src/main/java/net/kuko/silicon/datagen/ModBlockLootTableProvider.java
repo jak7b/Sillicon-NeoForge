@@ -27,7 +27,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(BlockInit.BISMUTH_BLOCK.get());
-        // dropSelf(BlockInit.MAGIC_BLOCK.get());
+        dropSelf(BlockInit.MAGIC_BLOCK.get());
 
         add(BlockInit.BISMUTH_ORE.get(),
                 block -> createOreDrop(BlockInit.BISMUTH_ORE.get(), ItemInit.RAW_BISMUTH.get()));

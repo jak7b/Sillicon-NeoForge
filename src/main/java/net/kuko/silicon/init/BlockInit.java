@@ -1,6 +1,7 @@
 package net.kuko.silicon.init;
 
 import net.kuko.silicon.SiliconMod;
+import net.kuko.silicon.block.MagicBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -39,6 +40,13 @@ public class BlockInit {
                     .sound(SoundType.DEEPSLATE)
                     .strength(3.9f)
                     .requiresCorrectToolForDrops()
+            ));
+
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.CHISELED_BOOKSHELF)
+                    .strength(3.9f)
             ));
 
 

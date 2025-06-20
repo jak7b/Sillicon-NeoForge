@@ -5,11 +5,16 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.awt.*;
 import java.util.function.Supplier;
 
 public class CreativeModTabsInit {
@@ -48,9 +53,11 @@ public class CreativeModTabsInit {
                         output.accept(BlockInit.BISMUTH_BLOCK.get());
                         output.accept(BlockInit.BISMUTH_ORE.get());
                         output.accept(BlockInit.DEEPSLATE_BISMUTH_ORE.get());
+                        output.accept(BlockInit.MAGIC_BLOCK.get());
                     })
                     .build()
     );
+
 
     public static void register(IEventBus bus) {
         CREATIVE_MODE_TAB.register(bus);

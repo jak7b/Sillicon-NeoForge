@@ -1,10 +1,13 @@
-// 1.21.1	2025-06-20T05:47:23.2374718	Block States: silicon
+// 1.21.1	2025-06-20T18:44:31.6830847	Block States: silicon
 9f590a5e15e8895fd4f420a5c594c7c937b8a588 assets/silicon/blockstates/bismuth_block.json
 de68c225947a3b970cfed848b519b714cd80f342 assets/silicon/blockstates/bismuth_deepslate_ore.json
 43dd7943e2e0f23562d0f828edd3a1b2c77be17e assets/silicon/blockstates/bismuth_ore.json
+d5b4e047d14348683c7f06ad39b0f997d279995c assets/silicon/blockstates/magic_block.json
 60a547a1a9cabb61389c39c2cfc1580a209c9b36 assets/silicon/models/block/bismuth_block.json
 87aaeca19d2a24038d8394246c46b92c36a438cc assets/silicon/models/block/bismuth_deepslate_ore.json
 9e1075d3acdcea720f42b0d79587708e195ad201 assets/silicon/models/block/bismuth_ore.json
+cc1158bac11ae284f1e34c4f84d2267e9813a467 assets/silicon/models/block/magic_block.json
 22be887ddbbd527ac6e9202af12d86d88be24e5b assets/silicon/models/item/bismuth_block.json
 1de65828226aeac60f6d03523eaadd558164d81f assets/silicon/models/item/bismuth_deepslate_ore.json
 d953a81db7a311ef225649484584793060337b7c assets/silicon/models/item/bismuth_ore.json
+8288102f52f41b4c746d4afd9bb8efe16960693f assets/silicon/models/item/magic_block.json

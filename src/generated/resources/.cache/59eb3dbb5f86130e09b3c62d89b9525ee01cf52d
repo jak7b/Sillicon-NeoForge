@@ -1,4 +1,5 @@
-// 1.21.1	2025-06-20T05:47:23.228648	Loot Tables
+// 1.21.1	2025-06-20T18:44:31.674494	Loot Tables
 9923fc2b0f2b6378b8b7946ae299eee681f72129 data/silicon/loot_table/blocks/bismuth_block.json
 1a32ba5a2e140e4be12d281facf0511b871df147 data/silicon/loot_table/blocks/bismuth_deepslate_ore.json
 d647c68e378797d68b125991be8cf0201c3ba9df data/silicon/loot_table/blocks/bismuth_ore.json
+65750a33d8c0a4b9ea6e1ee12ec6852eb0a7811b data/silicon/loot_table/blocks/magic_block.json

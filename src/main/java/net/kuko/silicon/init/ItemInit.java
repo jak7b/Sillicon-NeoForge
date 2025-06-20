@@ -21,11 +21,9 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
-            () -> new ChiselItem(new Item.Properties()));
-
-
-
-
+            () -> new ChiselItem(new Item.Properties()
+                    .stacksTo(1)
+                    .durability(800)));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
