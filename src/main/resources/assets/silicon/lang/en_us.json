@@ -15,6 +15,11 @@
   ],
 
 
+  "item.silicon.chisel": [
+    "Chisel"
+  ],
+
+
   "block.silicon.bismuth_block":[
     "Block of ",
     { "translate": "item.silicon.bismuth" }

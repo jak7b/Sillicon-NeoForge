@@ -27,6 +27,7 @@ public class CreativeModTabsInit {
                     .displayItems((parameters, output) ->{
                         output.accept(ItemInit.BISMUTH.get());
                         output.accept(ItemInit.RAW_BISMUTH.get());
+                        output.accept(ItemInit.CHISEL.get());
                     })
                     .build()
     );

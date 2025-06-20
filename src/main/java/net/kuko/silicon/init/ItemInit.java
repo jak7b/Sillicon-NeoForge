@@ -1,6 +1,7 @@
 package net.kuko.silicon.init;
 
 import net.kuko.silicon.SiliconMod;
+import net.kuko.silicon.item.ChiselItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -18,6 +19,9 @@ public class ItemInit {
 
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties()));
 
 
 
