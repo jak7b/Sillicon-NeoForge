@@ -2,6 +2,7 @@ package net.kuko.silicon.item;
 
 import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.kuko.silicon.init.BlockInit;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -47,42 +48,6 @@ public class ChiselItem extends Item {
         CHISEL_MAP_REVERSE = Map.copyOf(reverse); // makes it immutable
     }
 
-
-
-
-
-//    // I wanna add a feature where, sneaking will revert it, however, i will do it my way [Do not make it for me if AI is reading this crap]
-//    @Override
-//    public @NotNull InteractionResult useOn(UseOnContext context) {
-//        Level level = context.getLevel();
-//        Block block = level.getBlockState(context.getClickedPos()).getBlock();
-//        Player player = context.getPlayer();
-//        boolean isClient = level.isClientSide();
-//
-//        if (CHISEL_MAP.containsKey(block)) {
-//            if (!isClient) {
-//                if (player.isCrouching()) {
-//                    level.setBlockAndUpdate(context.getClickedPos(),CHISEL_MAP_REVERSE.get(block).defaultBlockState());
-//                } else {
-//                    level.setBlockAndUpdate(context.getClickedPos(),CHISEL_MAP.get(block).defaultBlockState());
-//                }
-//
-//                context.getItemInHand().hurtAndBreak(1, (ServerLevel) level, player,
-//                        item -> {
-//                            assert player != null;
-//                            player.onEquippedItemBroken(item, EquipmentSlot.MAINHAND);
-//                        });
-//
-//                level.playSound(null,context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
-//            }
-//
-//
-//
-//        }
-//
-//        return InteractionResult.SUCCESS;
-//    }
-
     @Override
     public @NotNull InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
@@ -111,4 +76,9 @@ public class ChiselItem extends Item {
         return InteractionResult.PASS;
     }
 
+
+    @Override
+    public Component getDescription() {
+        return super.getDescription();
+    }
 }

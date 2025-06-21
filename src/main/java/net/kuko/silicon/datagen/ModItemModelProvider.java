@@ -16,9 +16,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ItemInit.BISMUTH.get());
         basicItem(ItemInit.RAW_BISMUTH.get());
 
-//        basicItem(ItemInit.RADISH.get());
-//        basicItem(ItemInit.STARLIGHT_ASHES.get());
-//        basicItem(ItemInit.FROSTFIRE_ICE.get());
+        basicItem(ItemInit.RADISH.get());
+        basicItem(ItemInit.STARLIGHT_ASHES.get());
+        basicItem(ItemInit.FROSTFIRE_ICE.get());
         basicItem(ItemInit.CHISEL.get());
     }
 }

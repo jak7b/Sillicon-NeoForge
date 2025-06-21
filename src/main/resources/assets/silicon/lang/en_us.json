@@ -1,41 +1,58 @@
 {
   "item.silicon.bismuth": [
-    {"text":"","extra":[{"text":"B","color":"#FED435","bold":true},
-      {"text":"i","color":"#FED435","bold":true},
-      {"text":"s","color":"#FED435","bold":true},
-      {"text":"m","color":"#FED435","bold":true},
-      {"text":"u","color":"#ACC85C","bold":true},
-      {"text":"t","color":"#5BBD82","bold":true},
-      {"text":"h","color":"#09B1A9","bold":true}]}
+    {"text":"","extra":[
+      {"text":"B","color":"#09B1A9","bold":true},
+      {"text":"i","color":"#24B59C","bold":true},
+      {"text":"s","color":"#3FB98F","bold":true},
+      {"text":"m","color":"#5BBD83","bold":true},
+      {"text":"u","color":"#76C076","bold":true},
+      {"text":"t","color":"#91C469","bold":true},
+      {"text":"h","color":"#ACC85C","bold":true}
+    ]}
   ],
-
   "item.silicon.raw_bismuth": [
-    "Raw ",
+
+    {"text":"Raw ", "color":"#FFC0CB"},
     { "translate": "item.silicon.bismuth" }
   ],
-
-
   "item.silicon.chisel": [
-    "Chisel"
+
+    {"text":"Chisel", "color":"#A0A0A0", "italic":false}
   ],
-
-
   "block.silicon.bismuth_block":[
-    "Block of ",
+
+    {"text":"Block of ", "color":"#D3D3D3"},
     { "translate": "item.silicon.bismuth" }
   ],
-
   "block.silicon.bismuth_ore":[
-    { "translate": "item.silicon.bismuth" },
-    " Ore"
-  ],
 
+    { "translate": "item.silicon.bismuth" },
+    {"text":" Ore", "color":"#D3D3D3"}
+  ],
   "block.silicon.bismuth_deepslate_ore":[
-    "Deepslate ",
-    { "translate": "item.silicon.bismuth" },
-    " Ore"
-  ],
-  "creativetab.silicon.bismuth_item_tab": "Items Bismuth",
-  "creativetab.silicon.bismuth_block_tab": "Blocks Bismuth"
 
+    {"text":"Deepslate ", "color":"#696969"},
+    { "translate": "item.silicon.bismuth" },
+    {"text":" Ore", "color":"#D3D3D3"}
+  ],
+  "creativetab.silicon.bismuth_item_tab": [
+
+    {"text":"Items ", "color":"#ADD8E6"},
+    {"translate": "item.silicon.bismuth", "bold":true}
+  ],
+  "creativetab.silicon.bismuth_block_tab": [
+
+    {"text":"Blocks ", "color":"#ADD8E6"},
+    {"translate": "item.silicon.bismuth", "bold":true}
+  ],
+  "item.silicon.redish": [
+    "Reddish"
+  ],
+  "item.silicon.frostfire_ice": [
+    "Frostfire Ice"
+  ],
+
+  "item.silicon.starlight_ashes": [
+    "Starlight Ashes"
+  ]
 }

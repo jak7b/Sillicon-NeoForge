@@ -33,6 +33,9 @@ public class CreativeModTabsInit {
                         output.accept(ItemInit.BISMUTH.get());
                         output.accept(ItemInit.RAW_BISMUTH.get());
                         output.accept(ItemInit.CHISEL.get());
+                        output.accept(ItemInit.RADISH.get());
+                        output.accept(ItemInit.STARLIGHT_ASHES.get());
+                        output.accept(ItemInit.FROSTFIRE_ICE.get());
                     })
                     .build()
     );
