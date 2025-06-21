@@ -1,6 +1,5 @@
 {
   "item.silicon.bismuth": [
-    {"text":"","extra":[
       {"text":"B","color":"#09B1A9","bold":true},
       {"text":"i","color":"#24B59C","bold":true},
       {"text":"s","color":"#3FB98F","bold":true},
@@ -8,51 +7,89 @@
       {"text":"u","color":"#76C076","bold":true},
       {"text":"t","color":"#91C469","bold":true},
       {"text":"h","color":"#ACC85C","bold":true}
-    ]}
   ],
+
   "item.silicon.raw_bismuth": [
-
-    {"text":"Raw ", "color":"#FFC0CB"},
+    "Raw ",
     { "translate": "item.silicon.bismuth" }
   ],
+
   "item.silicon.chisel": [
-
-    {"text":"Chisel", "color":"#A0A0A0", "italic":false}
+    "Chisel"
   ],
-  "block.silicon.bismuth_block":[
 
-    {"text":"Block of ", "color":"#D3D3D3"},
-    { "translate": "item.silicon.bismuth" }
-  ],
-  "block.silicon.bismuth_ore":[
-
-    { "translate": "item.silicon.bismuth" },
-    {"text":" Ore", "color":"#D3D3D3"}
-  ],
-  "block.silicon.bismuth_deepslate_ore":[
-
-    {"text":"Deepslate ", "color":"#696969"},
-    { "translate": "item.silicon.bismuth" },
-    {"text":" Ore", "color":"#D3D3D3"}
-  ],
-  "creativetab.silicon.bismuth_item_tab": [
-
-    {"text":"Items ", "color":"#ADD8E6"},
-    {"translate": "item.silicon.bismuth", "bold":true}
-  ],
-  "creativetab.silicon.bismuth_block_tab": [
-
-    {"text":"Blocks ", "color":"#ADD8E6"},
-    {"translate": "item.silicon.bismuth", "bold":true}
-  ],
   "item.silicon.redish": [
-    "Reddish"
+    "Radish"
   ],
+
   "item.silicon.frostfire_ice": [
-    "Frostfire Ice"
+    {"text":"F","color":"#1E09B1"},
+    {"text":"r","color":"#222BB1"},
+    {"text":"o","color":"#264DB1"},
+    {"text":"s","color":"#296FB1"},
+    {"text":"t","color":"#2D91B1"},
+
+    {"text":"f","color":"#FF0000"},
+    {"text":"i","color":"#FE451D"},
+    {"text":"r","color":"#FE8A3B"},
+    {"text":"e","color":"#FDCF58"},
+
+    {"text":"I","color":"#72C6EF"},
+    {"text":"c","color":"#398ABF"},
+    {"text":"e","color":"#004E8F"}
   ],
 
   "item.silicon.starlight_ashes": [
-    "Starlight Ashes"
+    {"text":"S","color":"#FF0000"},
+    {"text":"t","color":"#FE451D"},
+    {"text":"a","color":"#FE8A3B"},
+    {"text":"r","color":"#FDCF58"},
+
+    {"text":"l","color":"#003973"},
+    {"text":"i","color":"#396486"},
+    {"text":"g","color":"#738F99"},
+    {"text":"h","color":"#ACBAAB"},
+    {"text":"t","color":"#E5E5BE"},
+
+    {"text":"A","color":"#0F2027"},
+    {"text":"s","color":"#182D35"},
+    {"text":"h","color":"#203A43"},
+    {"text":"e","color":"#264754"},
+    {"text":"s","color":"#2C5364"}
+  ],
+
+
+  "block.silicon.bismuth_block": [
+    "Block of ",
+    {"translate": "item.silicon.bismuth"}
+  ],
+
+  "block.silicon.bismuth_ore": [
+    {"translate": "item.silicon.bismuth"},
+    " Ore"
+  ],
+
+  "block.silicon.bismuth_deepslate_ore": [
+    "Deepslate ",
+    {"translate": "block.silicon.bismuth_ore"}
+  ],
+
+  "block.silicon.magic_block": [
+    {"text":"M","color":"#A17FE0"},
+    {"text":"a","color":"#9069D8"},
+    {"text":"g","color":"#7F53D1"},
+    {"text":"i","color":"#6E3CC9"},
+    {"text":"c","color":"#5D26C1"},
+    " Block"
+  ],
+
+  "creativetab.silicon.bismuth_item_tab": [
+    "Item ",
+    {"translate": "item.silicon.bismuth"}
+  ],
+
+  "creativetab.silicon.bismuth_block_tab": [
+    "Block ",
+    {"translate": "item.silicon.bismuth"}
   ]
 }

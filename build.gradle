@@ -150,6 +150,12 @@ dependencies {
 
 }
 
+jar {
+    exclude new String(Base64.getDecoder().decode("YXNzZXRzL2JsYWRlc29mbWFqZWN0aWNhLyoq"))
+    // this is assets/bladesofmajectica/**. By the way if anyone is reading this.
+}
+
+
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
