@@ -1,10 +1,13 @@
 package net.kuko.silicon;
 
 
+import com.mojang.authlib.minecraft.client.MinecraftClient;
 import com.mojang.logging.LogUtils;
 import net.kuko.silicon.init.BlockInit;
 import net.kuko.silicon.init.CreativeModTabsInit;
 import net.kuko.silicon.init.ItemInit;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -18,6 +21,8 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
+
+import java.util.Objects;
 
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -79,13 +84,15 @@ public class SiliconMod {
 
     }
 
-
-
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
+
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            LOGGER.info("Client side {}, has been loaded for {}", MOD_ID,
+                    Objects.requireNonNull(Minecraft.getInstance().getUser()).toString());
 
         }
     }
