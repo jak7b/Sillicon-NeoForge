@@ -35,16 +35,11 @@ public class SiliconMod {
     public SiliconMod(IEventBus modEventBus, @SuppressWarnings("unused") ModContainer modContainer) {
         // Register the commonSetup method for modloading
 
-
         modEventBus.addListener(this::commonSetup);
 
-
-
         CreativeModTabsInit.register(modEventBus);
-
         ItemInit.register(modEventBus);
         BlockInit.register(modEventBus);
-
 
 
         NeoForge.EVENT_BUS.register(this);
