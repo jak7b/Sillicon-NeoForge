@@ -2,6 +2,7 @@ package net.kuko.silicon.item;
 
 import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.kuko.silicon.init.BlockInit;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -10,6 +11,8 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
@@ -78,7 +81,14 @@ public class ChiselItem extends Item {
 
 
     @Override
-    public Component getDescription() {
-        return super.getDescription();
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context,
+                                List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        if (!Screen.hasShiftDown()) {
+            tooltipComponents.add(Component.translatable("item.silicon.chisel.tooltip"));
+        } else {
+            tooltipComponents.add(Component.translatable("item.silicon.chisel.tooltip.shift"));
+        }
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

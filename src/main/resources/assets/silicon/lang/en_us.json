@@ -1,72 +1,50 @@
 {
-
-
-
-
-
-
   "item.silicon.bismuth": "Bismuth",
-  "item.silicon.bismuth.tooltip": [
-
-  ],
-
   "item.silicon.raw_bismuth": "Raw Bismuth",
-  "item.silicon.raw_bismuth.tooltip": [
-
-  ],
 
   "item.silicon.chisel": "Chisel",
-  "item.silicon.chisel.tooltip": [
 
+  "item.minecraft.echo_shard": [
+    "Echo ",
+    { "text": "Shard", "color": "#0096FF" }
   ],
+
+  "item.silicon.chisel.tooltip": [
+    {"text": "Hold Shift for More Information.","color": "yellow"}
+  ],
+  "item.silicon.chisel.tooltip.shift": [
+    {"text": "Right-Click blocks to chisel them into bricks. Shift+Right-Click to unchisel them.", "color": "gray"}
+  ],
+
 
   "item.silicon.redish": "Radish",
-  "item.silicon.redish.tooltip": [
-
-  ],
 
   "item.silicon.frostfire_ice": "Frostfire Ice",
-  "item.silicon.frostfire_ice.tooltip": [
-
-  ],
 
   "item.silicon.starlight_ashes": "Starlight Ashes",
-  "item.silicon.starlight_ashes.tooltip": [
 
-  ],
-
-  "block.silicon.bismuth_block": "Block of Bismuth",
-  "block.silicon.bismuth_block.tooltip": [
-
-  ],
+  "block.silicon.bismuth_block": "Block of Bismuth ",
 
   "block.silicon.bismuth_ore": "Bismuth Ore",
-  "block.silicon.bismuth_ore.tooltip": [
 
-  ],
-
-  "block.silicon.bismuth_deepslate_ore": "Deeplsate Bismuth Ore",
-  "block.silicon.bismuth_deepslate_ore.tooltip": [
-
-  ],
+  "block.silicon.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
 
   "block.silicon.magic_block": "Magic Block",
   "block.silicon.magic_block.tooltip": [
-    "A Block that does ",
-    {"text":"M","color":"#A17FE0"}, {"text":"a","color":"#9069D8"},
-    {"text":"g","color":"#7F53D1"}, {"text":"i","color":"#6E3CC9"},
-    {"text":"c","color":"#5D26C1"}, {"text":"","color":"#6E3CC9"},
-    " when an appropriate item is thrown on it.\n Hold", {"text" : "Shift", "color": "#ffee00"}, " for the ",     {"text":"M","color":"#A17FE0"}, {"text":"a","color":"#9069D8"},
-    {"text":"g","color":"#7F53D1"}, {"text":"i","color":"#6E3CC9"},
-    {"text":"c","color":"#5D26C1"}, {"text":"","color":"#6E3CC9"}, " Items."
+    {"text": "","extra": [
+      {"text": "A Block that does ", "color": "gray","bold":true},
+      {"text":"M","color":"#A476FC","bold":true},
+        {"text":"a","color":"#945FEB","bold":true},
+        {"text":"g","color":"#8448DA","bold":true},
+        {"text":"i","color":"#7331C8","bold":true},
+        {"text":"c","color":"#631AB7","bold":true},
+      {"text": " when an appropriate item is thrown on it.", "color": "gray","bold":true}
+    ]}
   ],
 
-  "block.silicon.magic_block.tooltip.shift": [
-    ""
-  ],
+  "creativetab.silicon.bismuth_item_tab": "Bismuth Items",
 
-  "creativetab.silicon.bismuth_item_tab": "Item Bismuth",
+  "creativetab.silicon.bismuth_block_tab": "Bismuth Blocks",
 
-  "creativetab.silicon.bismuth_block_tab": "Block Bismuth"
-
+  "item.silicon.bismuth.tooltip": "This is Bismuth."
 }
